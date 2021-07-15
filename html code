@@ -66,5 +66,17 @@ xt = this.value&quot;&gt;
           
               &lt;button type=&quot;button&quot;&gt; Save &lt;/button&gt;
               &lt;button type=&quot;button&quot;&gt; Run &lt;/button&gt;
-          
+          <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "03a6d0a7-3e85-4c01-a0e1-6d1ff5417d05", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "075b7a45-9f3a-4834-98e5-bea4cc03e7c9", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
       &lt;/div&gt;
